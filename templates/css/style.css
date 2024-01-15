@@ -599,10 +599,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #343b40;
   padding: 100px 0 0px 0;
 }
+
+#facts .section-title{
+  color: white;
+}
 #facts .section-description{
   color: white;
   margin-top: 20px;
   line-height: 50px;
+  
 
 }
 

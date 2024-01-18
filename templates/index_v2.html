@@ -29,7 +29,9 @@ body {
   margin:0;
   border-radius: 25px;
 }
-
+.nav-link:hover{
+  color: orange;
+}
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight:300;
@@ -170,7 +172,21 @@ p {
       background-color: rgba(0, 0, 0, 0);
       height: contain;
       position: relative;
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+     }
+    100% {
+        opacity: 1;
+     }
+  }
     .data-div p{
       color: orange;
       font-size: 10vh;
@@ -179,6 +195,20 @@ p {
       background-color: rgba(0, 0, 0, 0);
       height: auto;
       color: #000;
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+     }
+    100% {
+        opacity: 1;
+     }
     }
     .intern-div p{
       color: white;
@@ -189,6 +219,21 @@ p {
       font-size: 25vh;
     }
     
+    .intro h2{
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: typing 5s steps(50) forwards;
+       
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
 
     /* Add a media query for responsiveness */
     @media (max-width: 768px) {
@@ -207,6 +252,7 @@ p {
         right: 0px;
         font-size: 5vh; 
         font-weight: 900;
+        
       }
       .intern-div{
         background-color: rgba(0, 0, 0, 0);
@@ -230,6 +276,22 @@ p {
         font-size: 15vh;
         margin-top: 5vh;
       }
+
+      .intro h2{
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      font-size: 16px;
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .1em; /* Adjust as needed */
+      animation: typing 3s steps(50) forwards;
+       
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
     }
 </style>
 <body>
@@ -285,7 +347,7 @@ p {
             </div>
         </div>
       </div>
-      <div class="">
+      <div class="intro">
         <h2 style="color: orange;">YOUR GATEWAY TO A DATA-DRIVEN FUTURE!</h2>
       </div>
 

@@ -436,11 +436,11 @@ p {
       border-radius: 20px;
       width: 60px;
       height: 60px;
-      background: black;
+      background: white;
       box-shadow:  0 0 0 #cccccc,
                    0 0 0 #ffffff,
-                    10px 10px 10px black inset,
-                    -10px -10px 10px black inset;
+                    10px 10px 10px white inset,
+                    -10px -10px 10px white inset;
       animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
       /* animation-fill-mode: forwards; */
     }
@@ -483,6 +483,56 @@ p {
                      2px 2px 2px #ffffff inset;
       }
     }
+  .mission{
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0.8) 100%);
+    color:white;
+    width: 100vw;
+    height: 50vh;
+    margin-top:10vh;
+    margin-bottom: 5vh;  
+  }  
+  .name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 30vw;
+    animation: name 1.0s cubic-bezier(0.165, 0.84, 0.44, 1) 5.9s forwards;
+    opacity: 1;
+}
+.name p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: orange;
+    font-size: 2.0vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1em;
+}
+.name_circle01{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+.name_circle02{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
 </style>
 <body>
 <div class="header">
@@ -604,11 +654,20 @@ p {
         </div>
     </div>
   </section>
+  </section>
   <!-- Section: Images -->
   <div class="banner">
     <div class="container">
       <div class="box"></div>
     </div>
+  </div>
+  <div class="mission">
+    <div class="name">
+      <p>"we believe in the transformative power of data. Our mission is to empower businesses, organizations, and individuals with the knowledge and insights they need to make informed decisions, drive innovation, and succeed in a data-driven world. "</p>
+      <span class="name_circle01"></span>
+      <span class="name_circle02"></span>
+  </div>
+</div>
   </div>
 <!--Content ends-->
 </body>

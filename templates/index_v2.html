@@ -536,6 +536,50 @@ p {
     height: 2vw;
     border-radius: 50%;
 }
+.team{
+  height: 20vh;
+  margin-bottom: 10vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+.team h2{
+   font-weight: 900;
+   font-size: 8vh;
+}
+.team-header{
+  text-align: center;
+}
+/* Basic styling for the card */
+.team .card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the card content */
+.team .card-content {
+  padding: 20px;
+}
+
+/* Styling for the hidden content */
+.hidden-content {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  opacity: 0;
+  width: 100%;
+}
+
+/* Hover effect: scale the card and show hidden content */
+
+
+.team .card:hover .hidden-content {
+  opacity: 1;
+}
+
 </style>
 <body>
 <div class="header">
@@ -674,6 +718,54 @@ p {
   </div>
 </div>
   </div>
+  <section class="team row" style="color: white;">
+    <div class="team-header">
+      <h2 style="color: orange;">Meet the Team</h2>
+      <p>This are the brilliant brains behind our innovations and products.</p>
+      <hr style="width: 40%; position: relative; margin: 0 auto; color: black;">
+    </div>
+    <div class="card col-md-4 m-5">
+      <div class="card-content">
+      <div class="hidden-content">
+        <p style="font-weight: 900;">Chief Executive Officer</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="card col-md-4 m-5">
+      <div class="card-content">
+      <div class="hidden-content">
+        <p style="font-weight: 900;">Chief Executive Officer</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="card col-md-4 m-5">
+      <div class="card-content">
+      <div class="hidden-content">
+        <p style="font-weight: 900;">Chief Executive Officer</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </section>
 <!--Content ends-->
 </body>
 </html>

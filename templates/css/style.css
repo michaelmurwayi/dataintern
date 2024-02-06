@@ -522,7 +522,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: url(../img/about-img.jpg) center  no-repeat;
   margin-bottom: 10px;
 }
 
@@ -596,21 +596,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
-  padding: 80px 0 60px 0;
+  background: #343b40;
+  padding: 100px 0 0px 0;
 }
 
-#facts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #2dc997;
+#facts .section-title{
+  color: white;
 }
+#facts .section-description{
+  color: white;
+  margin-top: 20px;
+  line-height: 50px;
+  
 
-#facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
 }
 
 /* Services Section
@@ -689,8 +687,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../static/data_bubble.jpg) fixed center center;
+  background-size: cover ;
+  background-repeat: no-repeat;
   padding: 80px 0;
 }
 
